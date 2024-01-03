@@ -11,23 +11,31 @@
 // }
 // else {
 //     alert("bad age")
-// }        
+// }    
 
-// let result;
+function min(no1, no2){
+    if (no1 < no2) {
+        return no1
+    }
+    return no2
+}
 
-// (a + b < 4) ? result = 'Below' : result = 'Over'
+
+alert(min(2, 5) );
+alert(min(3, -1));
+alert(min(1, 1) );
 
 // function checkAge(age) {
 //     return (age >= 18) ?  true : confirm('Did parents allow you?')
 // }
 
-function checkAge(age) {
-  return (age >= 18) || confirm('Did parents allow you?');
+// function checkAge(age) {
+//   return (age >= 18) || confirm('Did parents allow you?');
 
-}
+// }
 
-let age = prompt('How old are you?', 18);
-alert (checkAge(age));
+// let age = prompt('How old are you?', 18);
+// alert (checkAge(age));
 
         </script>
 </head>
