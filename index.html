@@ -13,17 +13,22 @@
 //     alert("bad age")
 // }        
 
-let result;
+// let result;
 
-(a + b < 4) ? result = 'Below' : result = 'Over'
+// (a + b < 4) ? result = 'Below' : result = 'Over'
 
-//     let y = 13
-// if (!(y >= 14 && y <= 90)) {
-//     alert("good age");
+// function checkAge(age) {
+//     return (age >= 18) ?  true : confirm('Did parents allow you?')
 // }
-// else {
-//     alert("bad age")
-// }
+
+function checkAge(age) {
+  return (age >= 18) || confirm('Did parents allow you?');
+
+}
+
+let age = prompt('How old are you?', 18);
+alert (checkAge(age));
+
         </script>
 </head>
 <body>
