@@ -5,25 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-//         let x = 14
-// if (x < 14 || x > 90) {
-//     alert("good age");
+
+let add7 = num => num+7;
+let multiply = num => num*7;
+let capitalize = string => string.toUpperCase().charAt(0);
+let lastLetter = string => string.slice(-1);;
+
+console.log(lastLetter('abcd'))
+
+// function min(no1, no2){
+//     if (no1 < no2) {
+//         return no1
+//     }
+//     return no2
 // }
-// else {
-//     alert("bad age")
-// }    
-
-function min(no1, no2){
-    if (no1 < no2) {
-        return no1
-    }
-    return no2
-}
 
 
-alert(min(2, 5) );
-alert(min(3, -1));
-alert(min(1, 1) );
+// alert(min(2, 5) );
+// alert(min(3, -1));
+// alert(min(1, 1) );
 
 // function checkAge(age) {
 //     return (age >= 18) ?  true : confirm('Did parents allow you?')
