@@ -6,24 +6,46 @@
     <title>Document</title>
     <script>
 
-let add7 = num => num+7;
-let multiply = num => num*7;
-let capitalize = string => string.toUpperCase().charAt(0);
-let lastLetter = string => string.slice(-1);;
+// let add7 = num => num+7;
+// let multiply = num => num*7;
+// let capitalize = string => string.toUpperCase().charAt(0);
+// let lastLetter = string => string.slice(-1);;
 
-console.log(lastLetter('abcd'))
+// console.log(lastLetter('abcd'))
 
-// function min(no1, no2){
-//     if (no1 < no2) {
-//         return no1
-//     }
-//     return no2
+
+
+// let i = 0;
+// do {
+//     let userInputNum = prompt('Enter a number greater than 100?', '' );
+//     i = userInputNum;
+//     if (!userInputNum) break; 
 // }
+// while (i < 101);
 
 
-// alert(min(2, 5) );
-// alert(min(3, -1));
-// alert(min(1, 1) );
+
+// let userInputNum = prompt('Enter a nubmer?', 0 );
+// for (let i = userInputNum;userInputNum >= 1; userInputNum--){
+//     if (!(userInputNum % 2 == 0 || userInputNum % 3 == 0 || userInputNum % 5 == 0 || userInputNum % 7 == 0)) {
+//         console.log(userInputNum)
+//     }
+
+// };
+
+let userInputNum = prompt('Enter a nubmer?', 0 );
+
+primeNum:
+for (let i = 2; i <= userInputNum; i++){
+    for (let j = 2; j < i; j++){
+        if (i % j == 0) {
+            continue primeNum   
+        };
+
+    }
+    console.log(i)   
+};
+
 
 // function checkAge(age) {
 //     return (age >= 18) ?  true : confirm('Did parents allow you?')
