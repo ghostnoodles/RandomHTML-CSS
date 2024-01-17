@@ -57,13 +57,20 @@
 
 const sumAll = function(sumOne, sumTwo) {
     let sumResult = 0 
-    for (let i = sumOne; i <= sumTwo; i++){
-        sumResult += i
+    if (sumOne < sumTwo){
+        for (let i = sumOne; i <= sumTwo; i++){
+            sumResult += i
+        }
+    }
+    else {
+        for (let i = sumTwo; i <= sumOne; i++){
+            sumResult += i
+        }
     }
     return sumResult
 };
 
-console.log((sumAll(1, 4000)))
+console.log((sumAll(1, 4)))
 
         </script>
 </head>
