@@ -25,31 +25,28 @@
 
 
 
-// let userInputNum = prompt('Enter a nubmer?', 0 );
-// for (let i = userInputNum;userInputNum >= 1; userInputNum--){
-//     if (!(userInputNum % 2 == 0 || userInputNum % 3 == 0 || userInputNum % 5 == 0 || userInputNum % 7 == 0)) {
-//         console.log(userInputNum)
-//     }
 
+// let userInputNum = prompt('Enter a nubmer?', 0 );
+
+// primeNum:
+// for (let i = 2; i <= userInputNum; i++){
+//     for (let j = 2; j < i; j++){
+//         if (i % j == 0) {
+//             continue primeNum   
+//         };
+
+//     }
+//     console.log(i)   
 // };
 
-let userInputNum = prompt('Enter a nubmer?', 0 );
 
-primeNum:
-for (let i = 2; i <= userInputNum; i++){
-    for (let j = 2; j < i; j++){
-        if (i % j == 0) {
-            continue primeNum   
-        };
+const removeFromArray = function (arr, toRemove) {
+    return arr.filter((arrValue) => !(arrValue == toRemove))
 
-    }
-    console.log(i)   
 };
 
 
-// function checkAge(age) {
-//     return (age >= 18) ?  true : confirm('Did parents allow you?')
-// }
+console.log(removeFromArray([1, 2, 3, 4], 3));
 
 // function checkAge(age) {
 //   return (age >= 18) || confirm('Did parents allow you?');
