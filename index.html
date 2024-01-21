@@ -13,6 +13,15 @@
 
 // console.log(lastLetter('abcd'))
 
+function palindromes (palindromeWord) {
+    let palindromeReverse = palindromeWord.split('').reverse().join('');
+    return palindromeWord == palindromeReverse ? true:false;
+};
+
+
+
+console.log(palindromes('racecar'));
+
 
 // let userInputNum = prompt('Enter a nubmer?', 0 );
 
@@ -55,22 +64,24 @@
 
 // }
 
-const sumAll = function(sumOne, sumTwo) {
-    let sumResult = 0 
-    if (sumOne < sumTwo){
-        for (let i = sumOne; i <= sumTwo; i++){
-            sumResult += i
-        }
-    }
-    else {
-        for (let i = sumTwo; i <= sumOne; i++){
-            sumResult += i
-        }
-    }
-    return sumResult
-};
+// const sumAll = function(sumOne, sumTwo) {
+//     let sumResult = 0 
+//     if (sumOne < sumTwo){
+//         for (let i = sumOne; i <= sumTwo; i++){
+//             sumResult += i
+//         }
+//     }
+//     else {
+//         for (let i = sumTwo; i <= sumOne; i++){
+//             sumResult += i
+//         }
+//     }
+//     return sumResult
+// };
 
-console.log((sumAll(1, 4)))
+// console.log((sumAll(1, 4)))
+
+
 
         </script>
 </head>
