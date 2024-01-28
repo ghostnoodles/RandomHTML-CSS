@@ -25,4 +25,7 @@ const p = document.createElement('p');
 p.textContent = 'ME TOO!';
 divId.appendChild(p);
 
-<button onclick="alert('Hello World')">Click Me</button>
+const btn = document.querySelector('#btn');
+btn.addEventListener('click', function (e) {
+    console.log(e.target);
+  });
